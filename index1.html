@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   .parent
+   {
+       border: 2px solid red;
+       width: 50%;
+       height: 400px;
+       text-align: center;
+       background-color: red;
+       position: relative;
+       left: 50px;
+       top: 50px;
+
+   }
+   .child{
+    border: 2px solid blue;
+    width: 50%;
+    height:200px;
+    text-align: center;
+    background-color: aqua;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+   }
+   span{
+    color:darkred;
+    text-decoration: underline;
+
+   }
+   h2{
+     color: orange;
+     text-align: justify;
+   }
+</style>
+<body>
+    <div class="parent">
+        <h1>parent</h1>
+        <div class="child">
+            <h1>child</h1>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h2><span>Describing the output:</span> In this I have used two div tags, child div tag is nested inside parent div  tag . For parent div tag I have used relative and change the position, it done from reference position of parent div . In child div I have used absolute position and placed the child div tag at right bottom corner by using right and bottom porperty by setting their values to zero. In child div tag  takes it ancestor or parent tag which is parent div tag as its refernce and new position or offset taken parent tag reference. </h2>
+</body>
+</html>
